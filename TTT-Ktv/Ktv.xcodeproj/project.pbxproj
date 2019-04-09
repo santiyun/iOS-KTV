@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48ED70F12252248200A106AB /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48ED70F02252248200A106AB /* libiconv.tbd */; };
+		48F8E4562248C458003AAA74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E4552248C458003AAA74 /* AppDelegate.m */; };
+		48F8E45C2248C458003AAA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F8E45A2248C458003AAA74 /* Main.storyboard */; };
+		48F8E45E2248C459003AAA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48F8E45D2248C459003AAA74 /* Assets.xcassets */; };
+		48F8E4612248C459003AAA74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48F8E45F2248C459003AAA74 /* LaunchScreen.storyboard */; };
+		48F8E4642248C459003AAA74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E4632248C459003AAA74 /* main.m */; };
+		48F8E46C2248C5A5003AAA74 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E46B2248C5A5003AAA74 /* SystemConfiguration.framework */; };
+		48F8E46E2248C5AA003AAA74 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E46D2248C5AA003AAA74 /* CoreTelephony.framework */; };
+		48F8E4702248C5B6003AAA74 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E46F2248C5B6003AAA74 /* ReplayKit.framework */; };
+		48F8E4722248C5C2003AAA74 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E4712248C5C2003AAA74 /* libc++.tbd */; };
+		48F8E4742248C5CA003AAA74 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E4732248C5CA003AAA74 /* libsqlite3.tbd */; };
+		48F8E4762248C5D8003AAA74 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E4752248C5D8003AAA74 /* libxml2.tbd */; };
+		48F8E4782248C5E1003AAA74 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8E4772248C5E1003AAA74 /* libz.tbd */; };
+		48F8E47B2248C5FE003AAA74 /* KtvLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E47A2248C5FE003AAA74 /* KtvLoginViewController.m */; };
+		48F8E47E2248C60C003AAA74 /* KTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E47D2248C60C003AAA74 /* KTVViewController.m */; };
+		48F8E4842248C878003AAA74 /* TTProgressHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E4802248C878003AAA74 /* TTProgressHud.m */; };
+		48F8E4852248C878003AAA74 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E4832248C878003AAA74 /* UIView+Toast.m */; };
+		48F8E4882248CC72003AAA74 /* KTVManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F8E4872248CC72003AAA74 /* KTVManager.m */; };
+		48F8E48A2248D3F4003AAA74 /* 1080.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 48F8E4892248D3F4003AAA74 /* 1080.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		48ED70F02252248200A106AB /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		48F8E4512248C458003AAA74 /* Ktv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ktv.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48F8E4542248C458003AAA74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48F8E4552248C458003AAA74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		48F8E45B2248C458003AAA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48F8E45D2248C459003AAA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48F8E4602248C459003AAA74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		48F8E4622248C459003AAA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F8E4632248C459003AAA74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48F8E46B2248C5A5003AAA74 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		48F8E46D2248C5AA003AAA74 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		48F8E46F2248C5B6003AAA74 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		48F8E4712248C5C2003AAA74 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		48F8E4732248C5CA003AAA74 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		48F8E4752248C5D8003AAA74 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		48F8E4772248C5E1003AAA74 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		48F8E4792248C5FE003AAA74 /* KtvLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KtvLoginViewController.h; sourceTree = "<group>"; };
+		48F8E47A2248C5FE003AAA74 /* KtvLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KtvLoginViewController.m; sourceTree = "<group>"; };
+		48F8E47C2248C60C003AAA74 /* KTVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTVViewController.h; sourceTree = "<group>"; };
+		48F8E47D2248C60C003AAA74 /* KTVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTVViewController.m; sourceTree = "<group>"; };
+		48F8E4802248C878003AAA74 /* TTProgressHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTProgressHud.m; sourceTree = "<group>"; };
+		48F8E4812248C878003AAA74 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		48F8E4822248C878003AAA74 /* TTProgressHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTProgressHud.h; sourceTree = "<group>"; };
+		48F8E4832248C878003AAA74 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		48F8E4862248CC72003AAA74 /* KTVManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTVManager.h; sourceTree = "<group>"; };
+		48F8E4872248CC72003AAA74 /* KTVManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTVManager.m; sourceTree = "<group>"; };
+		48F8E4892248D3F4003AAA74 /* 1080.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1080.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48F8E44E2248C458003AAA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48ED70F12252248200A106AB /* libiconv.tbd in Frameworks */,
+				48F8E4782248C5E1003AAA74 /* libz.tbd in Frameworks */,
+				48F8E4762248C5D8003AAA74 /* libxml2.tbd in Frameworks */,
+				48F8E4742248C5CA003AAA74 /* libsqlite3.tbd in Frameworks */,
+				48F8E4722248C5C2003AAA74 /* libc++.tbd in Frameworks */,
+				48F8E4702248C5B6003AAA74 /* ReplayKit.framework in Frameworks */,
+				48F8E46E2248C5AA003AAA74 /* CoreTelephony.framework in Frameworks */,
+				48F8E46C2248C5A5003AAA74 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48F8E4482248C458003AAA74 = {
+			isa = PBXGroup;
+			children = (
+				48F8E4532248C458003AAA74 /* Ktv */,
+				48F8E4522248C458003AAA74 /* Products */,
+				48F8E46A2248C5A4003AAA74 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48F8E4522248C458003AAA74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48F8E4512248C458003AAA74 /* Ktv.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48F8E4532248C458003AAA74 /* Ktv */ = {
+			isa = PBXGroup;
+			children = (
+				48F8E4542248C458003AAA74 /* AppDelegate.h */,
+				48F8E4552248C458003AAA74 /* AppDelegate.m */,
+				48F8E4862248CC72003AAA74 /* KTVManager.h */,
+				48F8E4872248CC72003AAA74 /* KTVManager.m */,
+				48F8E4792248C5FE003AAA74 /* KtvLoginViewController.h */,
+				48F8E47A2248C5FE003AAA74 /* KtvLoginViewController.m */,
+				48F8E47C2248C60C003AAA74 /* KTVViewController.h */,
+				48F8E47D2248C60C003AAA74 /* KTVViewController.m */,
+				48F8E4892248D3F4003AAA74 /* 1080.mp4 */,
+				48F8E45A2248C458003AAA74 /* Main.storyboard */,
+				48F8E45D2248C459003AAA74 /* Assets.xcassets */,
+				48F8E47F2248C878003AAA74 /* TTHelper */,
+				48F8E45F2248C459003AAA74 /* LaunchScreen.storyboard */,
+				48F8E4622248C459003AAA74 /* Info.plist */,
+				48F8E4632248C459003AAA74 /* main.m */,
+			);
+			path = Ktv;
+			sourceTree = "<group>";
+		};
+		48F8E46A2248C5A4003AAA74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48ED70F02252248200A106AB /* libiconv.tbd */,
+				48F8E4772248C5E1003AAA74 /* libz.tbd */,
+				48F8E4752248C5D8003AAA74 /* libxml2.tbd */,
+				48F8E4732248C5CA003AAA74 /* libsqlite3.tbd */,
+				48F8E4712248C5C2003AAA74 /* libc++.tbd */,
+				48F8E46F2248C5B6003AAA74 /* ReplayKit.framework */,
+				48F8E46D2248C5AA003AAA74 /* CoreTelephony.framework */,
+				48F8E46B2248C5A5003AAA74 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48F8E47F2248C878003AAA74 /* TTHelper */ = {
+			isa = PBXGroup;
+			children = (
+				48F8E4802248C878003AAA74 /* TTProgressHud.m */,
+				48F8E4812248C878003AAA74 /* UIView+Toast.h */,
+				48F8E4822248C878003AAA74 /* TTProgressHud.h */,
+				48F8E4832248C878003AAA74 /* UIView+Toast.m */,
+			);
+			path = TTHelper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48F8E4502248C458003AAA74 /* Ktv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48F8E4672248C459003AAA74 /* Build configuration list for PBXNativeTarget "Ktv" */;
+			buildPhases = (
+				48F8E44D2248C458003AAA74 /* Sources */,
+				48F8E44E2248C458003AAA74 /* Frameworks */,
+				48F8E44F2248C458003AAA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ktv;
+			productName = Ktv;
+			productReference = 48F8E4512248C458003AAA74 /* Ktv.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48F8E4492248C458003AAA74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = yanzhen;
+				TargetAttributes = {
+					48F8E4502248C458003AAA74 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 48F8E44C2248C458003AAA74 /* Build configuration list for PBXProject "Ktv" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48F8E4482248C458003AAA74;
+			productRefGroup = 48F8E4522248C458003AAA74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48F8E4502248C458003AAA74 /* Ktv */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48F8E44F2248C458003AAA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F8E48A2248D3F4003AAA74 /* 1080.mp4 in Resources */,
+				48F8E4612248C459003AAA74 /* LaunchScreen.storyboard in Resources */,
+				48F8E45E2248C459003AAA74 /* Assets.xcassets in Resources */,
+				48F8E45C2248C458003AAA74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48F8E44D2248C458003AAA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48F8E4852248C878003AAA74 /* UIView+Toast.m in Sources */,
+				48F8E47B2248C5FE003AAA74 /* KtvLoginViewController.m in Sources */,
+				48F8E4842248C878003AAA74 /* TTProgressHud.m in Sources */,
+				48F8E4642248C459003AAA74 /* main.m in Sources */,
+				48F8E4882248CC72003AAA74 /* KTVManager.m in Sources */,
+				48F8E47E2248C60C003AAA74 /* KTVViewController.m in Sources */,
+				48F8E4562248C458003AAA74 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		48F8E45A2248C458003AAA74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F8E45B2248C458003AAA74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		48F8E45F2248C459003AAA74 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48F8E4602248C459003AAA74 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48F8E4652248C459003AAA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		48F8E4662248C459003AAA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48F8E4682248C459003AAA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XP66VHL84;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../TTTLib";
+				INFOPLIST_FILE = Ktv/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					TTTRtcEngineKit,
+					"-framework",
+					TTTPlayerKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.3ttech.Ktv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48F8E4692248C459003AAA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7XP66VHL84;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../TTTLib";
+				INFOPLIST_FILE = Ktv/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					TTTRtcEngineKit,
+					"-framework",
+					TTTPlayerKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.3ttech.Ktv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48F8E44C2248C458003AAA74 /* Build configuration list for PBXProject "Ktv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F8E4652248C459003AAA74 /* Debug */,
+				48F8E4662248C459003AAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48F8E4672248C459003AAA74 /* Build configuration list for PBXNativeTarget "Ktv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F8E4682248C459003AAA74 /* Debug */,
+				48F8E4692248C459003AAA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48F8E4492248C458003AAA74 /* Project object */;
+}
