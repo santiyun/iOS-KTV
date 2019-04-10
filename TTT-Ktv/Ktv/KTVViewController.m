@@ -82,7 +82,10 @@
     }
     
     self.ktvUrl = [NSURL URLWithString:@"http://39.107.116.40/res/tpl/default/file/guoke.mp4"];
-    [self playOrPauseKTV:self.playBtn];
+    //切歌时建议延2秒重新打开新的KTV
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self playOrPauseKTV:self.playBtn];
+    });
 }
 
 //调节KTV播放的音量
