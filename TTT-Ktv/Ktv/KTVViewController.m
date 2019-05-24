@@ -26,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *muteSelfBtn;
 @property (weak, nonatomic) IBOutlet UILabel *audioStatsLabel;
 @property (weak, nonatomic) IBOutlet UILabel *videoStatsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *roomIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *uidLabel;
 
 @property (nonatomic, strong) NSURL *ktvUrl;
 @property (nonatomic) BOOL isPlaying;
@@ -42,6 +44,8 @@
     // Do any additional setup after loading the view.
     
     _ktvUrl = [NSBundle.mainBundle URLForResource:@"1080.mp4" withExtension:nil];
+    _roomIDLabel.text = [NSString stringWithFormat:@"房间Id: %@", KTVManager.manager.roomId];
+    _uidLabel.text = [NSString stringWithFormat:@"用户Id: %lld", KTVManager.manager.uid];
     KTVManager.manager.engine.delegate = self;
     KTVManager.manager.delegate = self;
     if (KTVManager.manager.role == TTTRtc_ClientRole_Anchor) {
@@ -80,8 +84,11 @@
         _playBtn.selected = NO;
         [KTVManager.manager stop];
     }
-    
-    self.ktvUrl = [NSURL URLWithString:@"http://39.107.116.40/res/tpl/default/file/guoke.mp4"];
+    if ([self.ktvUrl.absoluteString isEqualToString:@"http://39.107.116.40/res/tpl/default/file/guoke.mp4"]) {
+        _ktvUrl = [NSBundle.mainBundle URLForResource:@"1080.mp4" withExtension:nil];
+    } else {
+        self.ktvUrl = [NSURL URLWithString:@"http://39.107.116.40/res/tpl/default/file/guoke.mp4"];
+    }
     //切歌时建议延2秒重新打开新的KTV
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self playOrPauseKTV:self.playBtn];

@@ -46,8 +46,6 @@
 }
 
 - (IBAction)enterChannel:(UIButton *)sender {
-//    [self performSegueWithIdentifier:@"KTV" sender:nil];
-//    return;
     if (_roomIDTF.text.length == 0) {
         [self showToast:@"请输入19位以内的房间ID"];//可转换为大于0小于long long类型的数字
         return;
@@ -91,6 +89,8 @@
         //观众不用视频，只能看视频、听声音
         [KTVManager.manager.engine enableLocalVideo:NO];
     }
+    KTVManager.manager.roomId = _roomIDTF.text;
+    KTVManager.manager.uid = _uid;
     [KTVManager.manager.engine joinChannelByKey:nil channelName:_roomIDTF.text uid:_uid joinSuccess:nil];
 }
 
@@ -113,7 +113,7 @@
             errorInfo = @"超时,10秒未收到服务器返回结果";
             break;
         case TTTRtc_Error_Enter_Failed:
-            errorInfo = @"该直播间不存在";
+            errorInfo = @"无法连接服务器";
             break;
         case TTTRtc_Error_Enter_BadVersion:
             errorInfo = @"版本错误";

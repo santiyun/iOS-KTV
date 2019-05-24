@@ -16,7 +16,7 @@
 
 @property (nonatomic, strong) TTTRtcEngineKit *engine;
 @property (nonatomic, weak) id<KTVPlayDelegate> delegate;
-@property (nonatomic) int64_t roomId;
+@property (nonatomic) NSString *roomId;
 @property (nonatomic) int64_t uid;
 @property (nonatomic) TTTRtcClientRole role;
 

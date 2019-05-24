@@ -211,8 +211,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YZ-Ro-G8N">
+                                <rect key="frame" x="0.0" y="44" width="375" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNJ-eB-MP3">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2B-P9-zqK">
+                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="i2B-P9-zqK" firstAttribute="top" secondItem="1YZ-Ro-G8N" secondAttribute="top" id="0Bb-Hk-KAo"/>
+                                    <constraint firstAttribute="bottom" secondItem="i2B-P9-zqK" secondAttribute="bottom" id="5ch-QF-iTm"/>
+                                    <constraint firstItem="oNJ-eB-MP3" firstAttribute="leading" secondItem="1YZ-Ro-G8N" secondAttribute="leading" id="DOQ-ow-H4I"/>
+                                    <constraint firstItem="oNJ-eB-MP3" firstAttribute="top" secondItem="1YZ-Ro-G8N" secondAttribute="top" id="HyX-x3-NzJ"/>
+                                    <constraint firstAttribute="height" constant="20" id="KKx-HT-BL5"/>
+                                    <constraint firstItem="oNJ-eB-MP3" firstAttribute="width" secondItem="1YZ-Ro-G8N" secondAttribute="width" multiplier="0.5" id="QhO-k5-q7I"/>
+                                    <constraint firstAttribute="trailing" secondItem="i2B-P9-zqK" secondAttribute="trailing" id="UkB-2L-z7G"/>
+                                    <constraint firstAttribute="bottom" secondItem="oNJ-eB-MP3" secondAttribute="bottom" id="VMX-i4-gHw"/>
+                                    <constraint firstItem="i2B-P9-zqK" firstAttribute="leading" secondItem="oNJ-eB-MP3" secondAttribute="trailing" id="ywj-c8-iwi"/>
+                                </constraints>
+                            </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFL-Ov-e8q">
-                                <rect key="frame" x="10" y="44" width="355" height="266.33333333333331"/>
+                                <rect key="frame" x="10" y="64" width="355" height="266.33333333333331"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xsf-L0-0bF">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="266.33333333333331"/>
@@ -243,7 +272,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z1J-7K-MVl">
-                                <rect key="frame" x="10" y="330.33333333333331" width="355" height="189.99999999999994"/>
+                                <rect key="frame" x="10" y="350.33333333333331" width="355" height="189.99999999999994"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ruv-QI-UWq">
                                         <rect key="frame" x="310" y="5" width="40" height="30"/>
@@ -409,12 +438,15 @@
                             <constraint firstItem="z1J-7K-MVl" firstAttribute="top" secondItem="qFL-Ov-e8q" secondAttribute="bottom" constant="20" id="7yn-0b-D9m"/>
                             <constraint firstItem="7tN-XS-8Xg" firstAttribute="trailing" secondItem="w0p-I3-Wo0" secondAttribute="trailing" id="D1d-3Z-JNb"/>
                             <constraint firstItem="w0p-I3-Wo0" firstAttribute="trailing" secondItem="z1J-7K-MVl" secondAttribute="trailing" constant="10" id="Hzg-1T-Mzb"/>
+                            <constraint firstItem="1YZ-Ro-G8N" firstAttribute="leading" secondItem="w0p-I3-Wo0" secondAttribute="leading" id="JJT-f3-2Q5"/>
+                            <constraint firstItem="1YZ-Ro-G8N" firstAttribute="trailing" secondItem="w0p-I3-Wo0" secondAttribute="trailing" id="SA4-1I-qI8"/>
                             <constraint firstItem="qFL-Ov-e8q" firstAttribute="trailing" secondItem="w0p-I3-Wo0" secondAttribute="trailing" constant="-10" id="eab-Sc-e3L"/>
+                            <constraint firstItem="1YZ-Ro-G8N" firstAttribute="top" secondItem="w0p-I3-Wo0" secondAttribute="top" id="hLf-8m-DrS"/>
                             <constraint firstItem="j0S-lG-Xa8" firstAttribute="leading" secondItem="w0p-I3-Wo0" secondAttribute="leading" id="iVl-Kj-0hb"/>
                             <constraint firstItem="j0S-lG-Xa8" firstAttribute="trailing" secondItem="w0p-I3-Wo0" secondAttribute="trailing" id="kNu-bb-4ob"/>
                             <constraint firstItem="z1J-7K-MVl" firstAttribute="leading" secondItem="w0p-I3-Wo0" secondAttribute="leading" constant="10" id="oeb-p2-bjc"/>
                             <constraint firstItem="qFL-Ov-e8q" firstAttribute="leading" secondItem="w0p-I3-Wo0" secondAttribute="leading" constant="10" id="szJ-nr-9yI"/>
-                            <constraint firstItem="qFL-Ov-e8q" firstAttribute="top" secondItem="w0p-I3-Wo0" secondAttribute="top" id="t9P-ht-kaB"/>
+                            <constraint firstItem="qFL-Ov-e8q" firstAttribute="top" secondItem="w0p-I3-Wo0" secondAttribute="top" constant="20" id="t9P-ht-kaB"/>
                             <constraint firstItem="w0p-I3-Wo0" firstAttribute="bottom" secondItem="j0S-lG-Xa8" secondAttribute="bottom" id="vAq-fR-9zG"/>
                             <constraint firstItem="j0S-lG-Xa8" firstAttribute="top" secondItem="7tN-XS-8Xg" secondAttribute="bottom" id="zOH-OV-lZb"/>
                         </constraints>
@@ -429,6 +461,8 @@
                         <outlet property="muteSelfBtn" destination="3eh-Yu-InC" id="xhl-oM-pCv"/>
                         <outlet property="playBackView" destination="qFL-Ov-e8q" id="D5I-cS-v5j"/>
                         <outlet property="playBtn" destination="yww-eA-wy1" id="LAF-gC-0oY"/>
+                        <outlet property="roomIDLabel" destination="oNJ-eB-MP3" id="lzN-45-HIJ"/>
+                        <outlet property="uidLabel" destination="i2B-P9-zqK" id="uUK-kP-uli"/>
                         <outlet property="videoPlayer" destination="xsf-L0-0bF" id="dHZ-D4-znW"/>
                         <outlet property="videoStatsLabel" destination="2jZ-6r-XYv" id="B0R-2C-HPH"/>
                     </connections>

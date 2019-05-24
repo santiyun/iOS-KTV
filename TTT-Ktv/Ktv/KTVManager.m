@@ -43,7 +43,7 @@ static id _manager;
     self = [super init];
     if (self) {
         //初始化TTTRtcEngineKit对象，输入申请的AppID
-        _engine = [TTTRtcEngineKit sharedEngineWithAppId:<#name#> delegate:nil];
+        _engine = [TTTRtcEngineKit sharedEngineWithAppId:@"test900572e02867fab8131651339518" delegate:nil];
     }
     return self;
 }
